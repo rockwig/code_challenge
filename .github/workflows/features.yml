@@ -13,17 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Setup Env
-      run: |
-        echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
-        source ~/.zshrc
-
-    - name: Setup Ruby
-      run: |
-        rbenv global 2.3.3
-
     - name: Run tests
       run: |
-        brew cask reinstall chromedriver
         bundle install
         bundle exec cucumber features
