@@ -1,3 +1,5 @@
+![Run Features](https://github.com/rockwig/code_challenge/workflows/Run%20Features/badge.svg)
+
 # QA Code Test
 
 ### Setup
