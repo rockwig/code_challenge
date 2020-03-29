@@ -24,6 +24,6 @@ jobs:
 
     - name: Run tests
       run: |
-        brew cask install chromedriver
+        brew cask reinstall chromedriver
         bundle install
         bundle exec cucumber features
